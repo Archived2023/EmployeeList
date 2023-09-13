@@ -2,11 +2,11 @@
 {
     internal class PayRoll
     {
-        public List<Employee> Employees { get; set; }
+        private List<Employee> employees;
 
         public PayRoll()
         {
-            Employees = new List<Employee>();
+            employees = new List<Employee>();
         }
     }
 }

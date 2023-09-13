@@ -5,12 +5,15 @@ namespace EmployeeList
 {
     public class Program
     {
+       private static PayRoll payRoll;
+
         static void Main(string[] args)
         {
-            PayRoll payRoll = new PayRoll();
-            payRoll.Employees = new List<Employee>();
+          PayRoll payRoll = new PayRoll();
             
-            payRoll.Employees.Add(new Employee("Kalle", 3000));
+         
         }
+
+       
     }
 }
