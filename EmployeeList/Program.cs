@@ -10,26 +10,19 @@ namespace EmployeeList
         static void Main(string[] args)
         {
 
-            Program p = new Program();
-            Program p2 = new Program();
-            Program p3 = new Program();
-            p.payRoll
+            payRoll = new PayRoll();
+            SeedData();
 
 
-             payRoll = new PayRoll();
-
-            Robot robot = new Robot("K", 23);
-            Robot robot2 = new Robot("K", 23);
-            Robot robot3 = new Robot("K", 23);
-            Robot robot4 = new Robot("K", 23);
-            Console.WriteLine(Robot.Count);
-
-            Console.WriteLine("Hej");
-            
-            
-         
+           
         }
 
-       
+        private static void SeedData()
+        {
+            payRoll.AddEmplyees("Anna", 30000);
+            payRoll.AddEmplyees("Bengt", 50000);
+            payRoll.AddEmplyees("Pelle", 60000);
+            payRoll.AddEmplyees("Sara", 70000);
+        }
     }
 }
