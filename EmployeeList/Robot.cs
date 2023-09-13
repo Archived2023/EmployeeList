@@ -9,8 +9,18 @@
         public int Salary
         {
             get { return salary; }
-            set { salary = value; }
+            set 
+            { 
+                if(value < 0)
+                {
+                    salary = 0;
+                }
+                salary = value; 
+            }
         }
+
+        // public int Salary { get; set; }
+        public int Salary2;
 
 
         //public Robot()
@@ -25,10 +35,10 @@
             Salary = salary;
         }
 
-        public void SetFirstName(string name)
+        public void SetFirstName(string value)
         {
             //Validate
-            firstname = name;
+            firstname = value;
         }
 
         public string GetFirstName()

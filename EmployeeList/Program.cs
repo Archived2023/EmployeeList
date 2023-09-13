@@ -14,8 +14,12 @@ namespace EmployeeList
 
             robot.SetFirstName("Nisse");
             robot.Salary = 10;
+            robot.Salary2 = 10;
 
-            
+            Console.WriteLine(robot.Salary);
+            Console.WriteLine(robot.Salary2);
+
+
 
             //robot.firstname = "";
             Console.WriteLine(robot.GetFirstName());
