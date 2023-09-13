@@ -1,11 +1,16 @@
-﻿namespace EmployeeList
+﻿using System.Runtime.InteropServices;
+using Testing;
+
+namespace EmployeeList
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             Robot robot = new Robot("Kalle");
             Robot robot2 = new Robot("Nisse");
+
+            Class1 c = new Class1();
 
             robot.SetFirstName("Nisse");
 
