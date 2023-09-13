@@ -7,8 +7,10 @@ namespace EmployeeList
     {
         static void Main(string[] args)
         {
-            Employee emp = new Employee("Kalle", 30000);
-            emp.Name = "Pelle";
+            PayRoll payRoll = new PayRoll();
+            payRoll.Employees = new List<Employee>();
+            
+            payRoll.Employees.Add(new Employee("Kalle", 3000));
         }
     }
 }
