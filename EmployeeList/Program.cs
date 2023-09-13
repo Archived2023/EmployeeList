@@ -7,9 +7,11 @@ namespace EmployeeList
     {
         private static  PayRoll payRoll;
 
+        //Programmets startpunkt
+        //Får bara finnas EN!
         static void Main(string[] args)
         {
-
+            //Skapa en instans av typen PayRoll
             payRoll = new PayRoll();
             SeedData();
 
