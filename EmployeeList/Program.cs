@@ -7,12 +7,13 @@ namespace EmployeeList
     {
         static void Main(string[] args)
         {
-            Robot robot = new Robot("Kalle");
-            Robot robot2 = new Robot("Nisse");
+            Robot robot = new Robot("Kalle", 2);
+            Robot robot2 = new Robot("Nisse",5);
 
             Class1 c = new Class1();
 
             robot.SetFirstName("Nisse");
+            robot.Salary = 10;
 
             
 
