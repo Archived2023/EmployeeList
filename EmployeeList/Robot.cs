@@ -19,6 +19,8 @@
             }
         }
 
+        public static int Count;
+
         // public int Salary { get; set; }
         public int Salary2;
 
@@ -43,6 +45,7 @@
 
         public string GetFirstName()
         {
+            Count++;
             return firstname;
         }
     }
