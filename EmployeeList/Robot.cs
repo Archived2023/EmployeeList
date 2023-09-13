@@ -20,5 +20,10 @@
             //Validate
             firstname = name;
         }
+
+        public string GetFirstName()
+        {
+            return firstname;
+        }
     }
 }

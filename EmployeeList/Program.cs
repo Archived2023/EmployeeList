@@ -17,7 +17,7 @@ namespace EmployeeList
             
 
             //robot.firstname = "";
-            //Console.WriteLine(robot.firstname);
+            Console.WriteLine(robot.GetFirstName());
         }
     }
 }
