@@ -59,10 +59,10 @@ namespace EmployeeList
 
         private static void SeedData()
         {
-            payRoll.AddEmplyees("Anna", 30000);
-            payRoll.AddEmplyees("Bengt", 50000);
-            payRoll.AddEmplyees("Pelle", 60000);
-            payRoll.AddEmplyees("Sara", 70000);
+            payRoll.AddEmployee("Anna", 30000);
+            payRoll.AddEmployee("Bengt", 50000);
+            payRoll.AddEmployee("Pelle", 60000);
+            payRoll.AddEmployee("Sara", 70000);
         }
     }
 }
