@@ -2,7 +2,7 @@
 {
     internal class Employee : Object
     {
-        public string Name { get;  set; }
+        public string Name { get;  set; } 
         public int Salary { get; }
 
         public Employee(string name, int salary)

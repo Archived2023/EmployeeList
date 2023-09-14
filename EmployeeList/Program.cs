@@ -14,34 +14,6 @@ namespace EmployeeList
             //Skapa en instans av typen PayRoll
             payRoll = new PayRoll();
 
-
-            Employee kalle = new Employee("Kalle", 35000);
-           
-
-            payRoll.AddEmployee(kalle);
-
-            List<Employee> employees = payRoll.GetEmployees();
-
-            Console.WriteLine(employees[0].Name);
-
-            // employees[0] = new Employee("Anna", 35);
-            employees[0].Name = "Anna";
-
-            List<Employee> after = payRoll.GetEmployees();
-
-            Console.WriteLine(after[0].Name);
-
-
-
-
-
-
-
-
-
-
-
-
             SeedData();
 
             do
@@ -52,12 +24,13 @@ namespace EmployeeList
                 switch (input)
                 {
                     case "1":
-
+                        AddEmployee();
                         break;  
                     case "2":
                         PrintEmployees();
                         break;  
                     case "Q":
+                    case "q":
                         Environment.Exit(0);
                         break;
                     default:
@@ -66,6 +39,33 @@ namespace EmployeeList
 
 
             } while (true);
+        }
+
+        private static void AddEmployee()
+        {
+            bool success = false;
+            string name;
+
+            do
+            {
+                Console.WriteLine("Name: ");
+                name = Console.ReadLine()!;
+
+                if (string.IsNullOrWhiteSpace(name))
+                {
+                    Console.WriteLine("You must enter a valid name");
+                }
+                else
+                {
+                    success = true;
+                }
+
+            } while (!success);
+            
+
+            Console.WriteLine(name);
+
+
         }
 
         private static void PrintEmployees()

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeList", "EmployeeLis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{F0ACE495-B347-42C5-8B84-347F9C9553EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeList.Helpers", "EmployeeList.Helpers\EmployeeList.Helpers.csproj", "{36992ADC-4EC4-41A3-9418-25A9E23AF623}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F0ACE495-B347-42C5-8B84-347F9C9553EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0ACE495-B347-42C5-8B84-347F9C9553EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0ACE495-B347-42C5-8B84-347F9C9553EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36992ADC-4EC4-41A3-9418-25A9E23AF623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36992ADC-4EC4-41A3-9418-25A9E23AF623}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36992ADC-4EC4-41A3-9418-25A9E23AF623}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36992ADC-4EC4-41A3-9418-25A9E23AF623}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
