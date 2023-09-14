@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using EmployeeList.Helpers;
+using System.Runtime.InteropServices;
 
 namespace EmployeeList
 {
@@ -42,29 +43,10 @@ namespace EmployeeList
 
         private static void AddEmployee()
         {
-            bool success = false;
-            string name;
+            string name = Util.AskForString("Name");
+            uint salary = Util.AskForUInt("Salary");
 
-            do
-            {
-                Console.WriteLine("Name: ");
-                name = Console.ReadLine()!;
-
-                if (string.IsNullOrWhiteSpace(name))
-                {
-                    Console.WriteLine("You must enter a valid name");
-                }
-                else
-                {
-                    success = true;
-                }
-
-            } while (!success);
-            
-
-            Console.WriteLine(name);
-
-
+            payRoll.AddEmployee(name, salary);
         }
 
         private static void PrintEmployees()
