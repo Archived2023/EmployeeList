@@ -6,6 +6,7 @@ namespace EmployeeList
     public class Program
     {
         private static  PayRoll payRoll = new PayRoll();
+        private static  ConsoleUI ui = new ConsoleUI();
 
         //Programmets startpunkt
         //Får bara finnas EN!
@@ -19,7 +20,7 @@ namespace EmployeeList
             do
             {
                 ShowMainMeny();
-                string input = Console.ReadLine()!;
+                string input = ui.GetInput();
 
                 switch (input)
                 {
@@ -54,16 +55,16 @@ namespace EmployeeList
 
             foreach (Employee employee in employees)
             {
-                Console.WriteLine(employee);
+                ui.Print(employee.ToString());
                // Console.WriteLine("Name: " + employee.Name + "Salary: " + employee.Salary);
             }
         }
 
         private static void ShowMainMeny()
         {
-            Console.WriteLine($"{MenyHelpers.Add}. Add");
-            Console.WriteLine($"{MenyHelpers.Print}. Print");
-            Console.WriteLine($"{MenyHelpers.Quit}. Quit");
+            ui.Print($"{MenyHelpers.Add}. Add");
+            ui.Print($"{MenyHelpers.Print}. Print");
+            ui.Print($"{MenyHelpers.Quit}. Quit");
         }
 
         private static void SeedData()
