@@ -6,12 +6,17 @@ namespace EmployeeList
     public class Program
     {
         private static  PayRoll payRoll = new PayRoll();
-        private static  ConsoleUI ui = new ConsoleUI();
+        private static IUI ui = new ConsoleUI();
+      //  private static IUI ui2 = new MockUI();
 
         //Programmets startpunkt
         //Får bara finnas EN!
         static void Main(string[] args)
         {
+            //MockUI mockUI = new MockUI();
+            //mockUI.SetInput = "-10";
+            //Util.AskForUInt("", mockUI);
+
             //Skapa en instans av typen PayRoll
             //payRoll = new PayRoll();
 
@@ -20,7 +25,7 @@ namespace EmployeeList
             do
             {
                 ShowMainMeny();
-                string input = ui.GetInput();
+                string input = ui.GetInput().ToUpper();
 
                 switch (input)
                 {
@@ -43,8 +48,8 @@ namespace EmployeeList
 
         private static void AddEmployee()
         {
-            string name = Util.AskForString("Name");
-            uint salary = Util.AskForUInt("Salary");
+            string name = Util.AskForString("Name", ui);
+            uint salary = Util.AskForUInt("Salary", ui);
 
             payRoll.AddEmployee(name, salary);
         }

@@ -2,7 +2,7 @@
 {
     public static class Util
     {
-        public static string AskForString(string prompt) 
+        public static string AskForString(string prompt, IUI ui) 
         {
 
             bool success = false;
@@ -10,12 +10,12 @@
 
             do
             {
-                Console.WriteLine($"{prompt}: ");
-                answer = Console.ReadLine()!;
+                ui.Print($"{prompt}: ");
+                answer = ui.GetInput();
 
                 if (string.IsNullOrWhiteSpace(answer))
                 {
-                    Console.WriteLine($"You must enter a valid {prompt}");
+                    ui.Print($"You must enter a valid {prompt}");
                 }
                 else
                 {
@@ -27,11 +27,11 @@
             return answer;
         }
 
-        public static uint AskForUInt(string prompt)
+        public static uint AskForUInt(string prompt, IUI ui)
         {
             do
             {
-                string input = AskForString(prompt);
+                string input = AskForString(prompt,ui);
 
                 if(uint.TryParse(input, out uint result))
                 {
