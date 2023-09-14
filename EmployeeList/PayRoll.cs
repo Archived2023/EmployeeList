@@ -12,12 +12,17 @@
         internal void AddEmployee(string name, int salary)
         {
             employees.Add(new Employee(name, salary));
+        } 
+        
+        internal void AddEmployee(Employee employee)
+        {
+           employees.Add(employee);
         }
 
         internal List<Employee> GetEmployees()
         {
             //ToDo: Fix not good!
-            return employees;
+            return employees.ToList();
         }
     }
 }

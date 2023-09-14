@@ -38,7 +38,7 @@
         //Använd den här syntaxen istället för publika fält!
         //Snippet prop
         //public int Length { get; set; }
-        // public int Salary { get; set; }
+         //public int Salary { get; set; }
         //public int Salary2;
 
         //Statiskt fält gemensamt för alla instanser av klassen Robot.

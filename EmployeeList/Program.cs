@@ -13,6 +13,35 @@ namespace EmployeeList
         {
             //Skapa en instans av typen PayRoll
             payRoll = new PayRoll();
+
+
+            Employee kalle = new Employee("Kalle", 35000);
+           
+
+            payRoll.AddEmployee(kalle);
+
+            List<Employee> employees = payRoll.GetEmployees();
+
+            Console.WriteLine(employees[0].Name);
+
+            // employees[0] = new Employee("Anna", 35);
+            employees[0].Name = "Anna";
+
+            List<Employee> after = payRoll.GetEmployees();
+
+            Console.WriteLine(after[0].Name);
+
+
+
+
+
+
+
+
+
+
+
+
             SeedData();
 
             do
@@ -45,7 +74,7 @@ namespace EmployeeList
 
             foreach (Employee employee in employees)
             {
-                Console.WriteLine($"Name: {employee.Name} Salary: {employee.Salary}");
+                Console.WriteLine(employee);
                // Console.WriteLine("Name: " + employee.Name + "Salary: " + employee.Salary);
             }
         }
