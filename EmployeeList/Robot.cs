@@ -22,7 +22,7 @@
         //Snippet propfull för att skapa ett property med bakomliggande fält.
         public int Salary
         {
-            get { return salary; }
+            get => salary;
             set 
             { 
                 if(value < 0)
@@ -31,6 +31,16 @@
                 }
                 salary = value; 
             }
+            
+            //get { return salary; }
+            //set 
+            //{ 
+            //    if(value < 0)
+            //    {
+            //        salary = 0;
+            //    }
+            //    salary = value; 
+            //}
         }
 
 
