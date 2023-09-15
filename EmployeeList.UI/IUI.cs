@@ -1,4 +1,4 @@
-﻿namespace EmployeeList.Helpers
+﻿namespace EmployeeList.UI
 {
     //Interface namnkonvention att namnet startar med I.
     //Klasser som implementerar IUI måste implementera GetInput() samt Print(string message)

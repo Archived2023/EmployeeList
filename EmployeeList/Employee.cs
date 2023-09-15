@@ -1,6 +1,6 @@
 ﻿namespace EmployeeList
 {
-    internal class Employee : Object
+    public class Employee : Object
     {
         public string Name { get;  set; } 
         public uint Salary { get; }

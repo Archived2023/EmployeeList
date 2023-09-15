@@ -1,11 +1,10 @@
-﻿using EmployeeList.Helpers;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmployeeList
+namespace EmployeeList.UI
 {
     public class ConsoleUI : IUI
     {
@@ -19,10 +18,10 @@ namespace EmployeeList
             return Console.ReadLine()!;
         }
     }
-    
+
     public class AppUI : IUI
     {
-       
+
         public void Print(string message)
         {
             //Prints message in dialog
@@ -34,7 +33,7 @@ namespace EmployeeList
             return string.Empty;
         }
     }
-    
+
     public class MockUI : IUI
     {
         public string SetInput { private get; set; } = "1";
@@ -46,5 +45,6 @@ namespace EmployeeList
         {
             return SetInput;
         }
+
     }
 }

@@ -1,11 +1,13 @@
-﻿namespace EmployeeList.Helpers
+﻿using EmployeeList.UI;
+
+namespace EmployeeList.Helpers
 {
     //Statisk klass kan ej instansieras (med andra ord EJ : Util util = new Util())
     //Statiska klasser kan endast ha statiska medlemmar
     //Anropas med klassNamn.MetodNamn tex Util.AskForString("Hej!", new ConsoleUI())
     public static class Util
     {
-        public static string AskForString(string prompt, ConsoleUI ui) 
+        public static string AskForString(string prompt, IUI ui) 
         {
 
             bool success = false;
@@ -30,7 +32,7 @@
             return answer;
         }
 
-        public static uint AskForUInt(string prompt, ConsoleUI ui)
+        public static uint AskForUInt(string prompt, IUI ui)
         {
             do
             {
