@@ -20,10 +20,28 @@ namespace EmployeeList
         }
     }
     
+    public class AppUI : IUI
+    {
+       
+        public void Print(string message)
+        {
+            //Prints message in dialog
+        }
+        public string GetInput()
+        {
+            //Get input from textfield
+            //Returns string
+            return string.Empty;
+        }
+    }
+    
     public class MockUI : IUI
     {
         public string SetInput { private get; set; } = "1";
-        public void Print(string message){}
+        public void Print(string message)
+        {
+            //In this case does nothing!
+        }
         public string GetInput()
         {
             return SetInput;

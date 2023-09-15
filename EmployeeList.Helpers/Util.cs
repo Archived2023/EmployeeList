@@ -2,7 +2,7 @@
 {
     public static class Util
     {
-        public static string AskForString(string prompt, IUI ui) 
+        public static string AskForString(string prompt, ConsoleUI ui) 
         {
 
             bool success = false;
@@ -27,7 +27,7 @@
             return answer;
         }
 
-        public static uint AskForUInt(string prompt, IUI ui)
+        public static uint AskForUInt(string prompt, ConsoleUI ui)
         {
             do
             {

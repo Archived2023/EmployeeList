@@ -6,7 +6,7 @@ namespace EmployeeList
     public class Program
     {
         private static  PayRoll payRoll = new PayRoll();
-        private static IUI ui = new ConsoleUI();
+        private static ConsoleUI ui = new ConsoleUI();
       //  private static IUI ui2 = new MockUI();
 
         //Programmets startpunkt
