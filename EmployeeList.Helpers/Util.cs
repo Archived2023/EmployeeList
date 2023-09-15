@@ -1,5 +1,8 @@
 ﻿namespace EmployeeList.Helpers
 {
+    //Statisk klass kan ej instansieras (med andra ord EJ : Util util = new Util())
+    //Statiska klasser kan endast ha statiska medlemmar
+    //Anropas med klassNamn.MetodNamn tex Util.AskForString("Hej!", new ConsoleUI())
     public static class Util
     {
         public static string AskForString(string prompt, ConsoleUI ui) 
