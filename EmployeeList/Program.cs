@@ -15,9 +15,31 @@ namespace EmployeeList
             IUI ui = new ConsoleUI();
 
             Main main = new Main(ui, payRoll);
-            main.Run();
 
+            var emp = new Employee(null, 34);
 
+            try
+            {
+                 main.Run();
+            }
+            catch (ArgumentNullException ex)
+            {
+                Console.WriteLine(ex.Message);
+            } 
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine(ex.Message);
+            } 
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                main.Run();
+            }
+
+            //var res = int.Parse(Console.ReadLine());
 
             //MockUI mockUI = new MockUI();
             //mockUI.SetInput = "-10";

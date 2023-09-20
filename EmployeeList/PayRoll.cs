@@ -11,6 +11,11 @@
 
         public void AddEmployee(string name, uint salary)
         {
+            if (name is null)
+            {
+                throw new ArgumentNullException(nameof(name));
+            }
+
             employees.Add(new Employee(name, salary));
         }
 

@@ -21,7 +21,7 @@
 
         public Employee(string name, uint salary)
         {
-            Name = name;
+            Name = name ?? throw new ArgumentNullException(nameof(name));
             Salary = salary;
         }
 
