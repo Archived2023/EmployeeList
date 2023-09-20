@@ -52,7 +52,7 @@ namespace EmployeeList
             string name = Util.AskForString("Name", ui);
             uint salary = Util.AskForUInt("Salary", ui);
 
-            payRoll.AddEmployee(null, salary);
+            payRoll.AddEmployee(name, salary);
         }
 
         private  void PrintEmployees()

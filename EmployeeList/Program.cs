@@ -16,7 +16,7 @@ namespace EmployeeList
 
             Main main = new Main(ui, payRoll);
 
-            var emp = new Employee(null, 34);
+           // var emp = new Employee(null, 34);
 
             try
             {
