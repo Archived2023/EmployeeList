@@ -22,25 +22,25 @@ namespace EmployeeList.MSTest
 
 
         //[TestMethod]
-        //[DataTestMethod]
-        //[DataRow(2)]
-        //[DataRow(10000)]
-        //[DataRow(24999)]
-        //public void SalaryLevel_Get_ShouldReturn_SalaryLevelJunior2(uint salary)
-        //{
-        //    //Arrange
-        //    const string name = "Kalle";
+        [DataTestMethod]
+        [DataRow(2u)]
+        [DataRow(10000u)]
+        [DataRow(24999u)]
+        public void SalaryLevel_Get_ShouldReturn_SalaryLevelJunior2(uint salary)
+        {
+            //Arrange
+            const string name = "Kalle";
 
-        //    var emp = new Employee(name, salary);
-        //    var expected = SalaryLevel.Junior;
+            var emp = new Employee(name, salary);
+            var expected = SalaryLevel.Junior;
 
-        //    //Act
-        //    var actual = emp.SalaryLevel;
+            //Act
+            var actual = emp.SalaryLevel;
 
-        //    //Assert
-        //    Assert.AreEqual(expected, actual);
-        //}
+            //Assert
+            Assert.AreEqual(expected, actual);
+         }
 
 
-    }
+        }
 }
