@@ -7,6 +7,7 @@
         public PayRoll()
         {
             employees = new List<Employee>();
+            var res = employees.Where(e => e.Salary > 0);
         }
 
         public void AddEmployee(string name, uint salary)
